@@ -95,6 +95,8 @@ namespace EthereumWebAPI.Controllers
         private string SendTransaction(string fromAccount, string ToAccount, string ethvalue)
         {
             //var value = txtAmount.Text.ToBigInteger(NumberStyles.Integer);
+            SendTxHistoryList = new List<SendTxHistory>();
+
             var privateConnection = new ConnectionOptions()
             {
                 Port = "8545",
