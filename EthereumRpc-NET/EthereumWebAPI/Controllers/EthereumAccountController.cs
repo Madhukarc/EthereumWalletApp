@@ -118,14 +118,6 @@ namespace EthereumWebAPI.Controllers
 
             var txHash = ethereumService.SendTransaction(transaction);
 
-            var sendTxHistory = new SendTxHistory()
-            {
-                DateTime = DateTime.Now.ToString(),
-                Amount = transaction.Value.ToBigInteger().WeiToEther(),
-                Hash = txHash
-            };
-
-            SendTxHistoryList.Add(sendTxHistory);
             return txHash;
         }
     }
