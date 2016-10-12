@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ethereum Rpc .NET", "Ethereum Rpc .NET\Ethereum Rpc .NET.csproj", "{3981DB19-40C6-4076-A9A1-EB09E2494CD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ethereum Windows Wallet", "Ethereum Windows Wallet\Ethereum Windows Wallet.csproj", "{85AAC59C-F998-469C-8510-58E718F74EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EthereumWebAPI", "EthereumWebAPI\EthereumWebAPI.csproj", "{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{3981DB19-40C6-4076-A9A1-EB09E2494CD7}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{85AAC59C-F998-469C-8510-58E718F74EEC}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDC0619-653F-4CBC-BE70-0283C7AD75CF}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,106 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_padding"
+                android:background="?android:attr/colorBackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/showAccount_Balance_panel">
+  <TextView
+    android:id="@+id/Summary_panel_textview"
+    android:text="@string/Summary_text"
+    android:drawablePadding="@dimen/textview_drawablePadding"
+   android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:textSize="28dp"
+   android:gravity="left" />
+
+  <TextView
+   android:id="@+id/Account_1_Heading_panel_textview"
+   android:text="@string/Account_1_Heading_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/Summary_panel_textview"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="20dp"
+  android:gravity="left" />
+  <TextView
+   android:id="@+id/Account_1_panel_textview"
+   android:text="@string/Account_1_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/Account_1_Heading_panel_textview"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="11dp"
+    
+  android:gravity="left" />
+
+  <TextView
+   android:id="@+id/Account_1_Balance_Heading_textview"
+   android:text="@string/Account_Balance_Heading_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/Account_1_panel_textview"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="20dp"
+   android:gravity="left" />
+  <TextView
+   android:id="@+id/Account_1_Balance_panel_textview"
+   android:text="@string/Account_1_balance_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/Account_1_Balance_Heading_textview"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="15dp"
+   android:gravity="left" />
+
+
+  <TextView
+   android:id="@+id/Account_2_Heading_panel_textview"
+   android:text="@string/Account_2_Heading_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/Account_1_Balance_panel_textview"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="20dp"
+  android:gravity="left" />
+  <TextView
+    android:id="@+id/Account_2_panel_textview"
+    android:text="@string/Account_2_text"
+    android:drawablePadding="@dimen/textview_drawablePadding"
+   android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_below="@+id/Account_2_Heading_panel_textview"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:textSize="11dp"
+   android:gravity="left" />
+
+  <TextView
+    android:id="@+id/Account_2_Balance_Heading_textview"
+    android:text="@string/Account_Balance_Heading_text"
+    android:drawablePadding="@dimen/textview_drawablePadding"
+   android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_below="@+id/Account_2_panel_textview"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:gravity="left" />
+  <TextView
+     android:id="@+id/Account_2_Balance_panel_textview"
+     android:text="@string/Account_2_balance_text"
+     android:drawablePadding="@dimen/textview_drawablePadding"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_below="@+id/Account_2_Balance_Heading_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:textSize="15dp"
+        android:gravity="left" />
+
+</RelativeLayout>

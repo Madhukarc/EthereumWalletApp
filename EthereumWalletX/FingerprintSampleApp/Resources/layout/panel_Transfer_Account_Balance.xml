@@ -1,0 +1,50 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_padding"
+                android:background="?android:attr/colorBackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/transferAccount_Balance_panel">
+  <TextView
+    android:id="@+id/SourceAccountHeading"     
+    android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Choose source account" />
+  <Spinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/spnrsourceAccount" 
+       android:layout_below="@+id/SourceAccountHeading"
+      />
+  
+  <TextView
+    android:id="@+id/TargetAccountHeading"       
+    android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="Choose target account"
+    android:layout_below="@+id/spnrsourceAccount"
+    />
+  <Spinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/spnrtargetAccount"
+      android:layout_below="@+id/TargetAccountHeading"
+      />
+  
+  <EditText
+    android:id="@+id/etherValue"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:layout_below="@+id/spnrtargetAccount"
+    />
+  
+  <Button xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transfer_balance_button"
+        android:layout_below="@+id/etherValue"
+        android:text="@string/Transfer_Balance"
+        android:layout_marginTop="6dp" />
+</RelativeLayout>
