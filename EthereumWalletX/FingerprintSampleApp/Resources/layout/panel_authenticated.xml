@@ -36,7 +36,7 @@
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:id="@+id/transfer_button"
-         android:layout_below="@+id/scan_again_button"
+         android:layout_below="@+id/show_account_button"
          android:text="@string/Transfer_Balance_Detail"
          android:layout_marginTop="6dp" />
 </RelativeLayout>

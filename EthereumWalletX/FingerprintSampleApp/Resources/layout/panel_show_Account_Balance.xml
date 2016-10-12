@@ -103,4 +103,47 @@
       android:textSize="15dp"
         android:gravity="left" />
 
+
+  <TextView
+   android:id="@+id/Account_3_Heading_panel_textview"
+   android:text="@string/Account_3_Heading_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/Account_2_Balance_panel_textview"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="20dp"
+  android:gravity="left" />
+  <TextView
+    android:id="@+id/Account_3_panel_textview"
+    android:text="@string/Account_3_text"
+    android:drawablePadding="@dimen/textview_drawablePadding"
+   android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_below="@+id/Account_3_Heading_panel_textview"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:textSize="11dp"
+   android:gravity="left" />
+
+  <TextView
+    android:id="@+id/Account_3_Balance_Heading_textview"
+    android:text="@string/Account_Balance_Heading_text"
+    android:drawablePadding="@dimen/textview_drawablePadding"
+   android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_below="@+id/Account_3_panel_textview"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:gravity="left" />
+  <TextView
+     android:id="@+id/Account_3_Balance_panel_textview"
+     android:text="@string/Account_3_balance_text"
+     android:drawablePadding="@dimen/textview_drawablePadding"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_below="@+id/Account_3_Balance_Heading_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:textSize="15dp"
+        android:gravity="left" />
+  
 </RelativeLayout>

@@ -39,7 +39,7 @@ namespace EthereumWalletXApp
 
         FingerprintManagerApiDialogFragment _dialogFrag;
         View _errorPanel, _authenticatedPanel, _initialPanel, _scanInProgressPanel, _accountBalancePanel, _transferBalancePanel;
-        TextView _errorTextView1, _errorTextView2;
+        TextView _errorTextView1, _errorTextView2;//, _successMessage;
         EditText _transferbal;
         FingerprintManagerCompat _fingerprintManager;
         Button _startAuthenticationScanButton, _scanAgainButton, _failedScanAgainButton, _showAccountBalanceButton, _transferAccountBalanceButton, _transferBalanceButton;
@@ -54,8 +54,8 @@ namespace EthereumWalletXApp
             _fingerprintManager = FingerprintManagerCompat.From(this);
             string canScanMsg = CheckFingerprintEligibility();
 
-            //_startAuthenticationScanButton.Click += StartFingerprintScan;
-            _startAuthenticationScanButton.Click += ShowTransferPanel;
+            _startAuthenticationScanButton.Click += StartFingerprintScan;
+            //_startAuthenticationScanButton.Click += ShowTransferPanel;
 
             _scanAgainButton.Click += ScanAgainButtonOnClick;
             _failedScanAgainButton.Click += RecheckEligibility;
@@ -63,14 +63,14 @@ namespace EthereumWalletXApp
             _transferAccountBalanceButton.Click += ShowTransferPanel;
             _transferBalanceButton.Click += makeTransaction;
 
-            //if (_canScan)
-            //{
-            //    _dialogFrag = FingerprintManagerApiDialogFragment.NewInstance(_fingerprintManager);
-            //}
-            //else
-            //{
-            //    ShowError("Can't use this device for the sample.", canScanMsg);
-            //}
+            if (_canScan)
+            {
+                _dialogFrag = FingerprintManagerApiDialogFragment.NewInstance(_fingerprintManager);
+            }
+            else
+            {
+                ShowError("Can't use this device for the sample.", canScanMsg);
+            }
         }
 
         async void ShowAccountBalance(object sender, EventArgs eventArgs)
@@ -92,11 +92,17 @@ namespace EthereumWalletXApp
                     TextView balance1 = FindViewById<TextView>(Resource.Id.Account_1_Balance_panel_textview);
                     TextView account2 = FindViewById<TextView>(Resource.Id.Account_2_panel_textview);
                     TextView balance2 = FindViewById<TextView>(Resource.Id.Account_2_Balance_panel_textview);
+
+                    TextView account3 = FindViewById<TextView>(Resource.Id.Account_3_panel_textview);
+                    TextView balance3 = FindViewById<TextView>(Resource.Id.Account_3_Balance_panel_textview);
                     account1.Text = ethAccounts[0].Address;
                     balance1.Text = ethAccounts[0].Balance;
 
                     account2.Text = ethAccounts[1].Address;
                     balance2.Text = ethAccounts[1].Balance;
+
+                    account3.Text = ethAccounts[2].Address;
+                    balance3.Text = ethAccounts[2].Balance;
                 }
 
 
@@ -117,6 +123,7 @@ namespace EthereumWalletXApp
         async void ShowTransferPanel(object sender, EventArgs eventArgs)
         {
 
+           // _successMessage.Visibility = ViewStates.Gone;
             Spinner sourcespinner = FindViewById<Spinner>(Resource.Id.spnrsourceAccount);
             Spinner targetspinner = FindViewById<Spinner>(Resource.Id.spnrtargetAccount);
 
@@ -166,23 +173,26 @@ namespace EthereumWalletXApp
         async void makeTransaction(object sender, EventArgs eventArgs)
         {
             string url = "http://52.172.158.181:80/api/EthereumAccount/";
-            TransferDT0 tarnsfer = null;
+            TransferDT0 tarnsfer = new TransferDT0();
             tarnsfer.FromAddress = _sourceAccount;
             tarnsfer.ToAddress = _targetAccount;
             tarnsfer.EtherValue = _transferbal.Text;
+            string transactionDetails = "Transaction Details: " + "Source : " +tarnsfer.FromAddress + "target: "+ tarnsfer.ToAddress + "Ether: "+ tarnsfer.EtherValue;
+            Toast.MakeText(this, transactionDetails, ToastLength.Long).Show();
 
             var uri = new Uri(string.Format(url, string.Empty));
             try
             {
                 var json = JsonConvert.SerializeObject(tarnsfer);
-                var content = new StringContent(json, System.Text.Encoding.UTF8,"application/json");
+                Toast.MakeText(this, json, ToastLength.Long).Show();
+                var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
                 var response = await client.PostAsync(uri, content);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    ShowError("Transaction Successful");
-
+                    var successMsg = "Transaction Successful";
+                    Toast.MakeText(this, successMsg, ToastLength.Long).Show();
                 }
             }
             catch (Exception ex)
@@ -197,8 +207,8 @@ namespace EthereumWalletXApp
             Spinner sourcespinner = (Spinner)sender;
 
             string toast = string.Format("The planet is {0}", sourcespinner.GetItemAtPosition(e.Position));
-            _sourceAccount = toast;
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+            _sourceAccount = sourcespinner.GetItemAtPosition(e.Position).ToString();
+            //Toast.MakeText(this, toast, ToastLength.Long).Show();
 
         }
         private void targetspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
@@ -206,8 +216,8 @@ namespace EthereumWalletXApp
             Spinner spinner = (Spinner)sender;
 
             string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
-            _targetAccount = toast;
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+            _targetAccount = spinner.GetItemAtPosition(e.Position).ToString();
+            //Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
 
 
@@ -301,7 +311,7 @@ namespace EthereumWalletXApp
             _transferAccountBalanceButton = FindViewById<Button>(Resource.Id.transfer_button);
             _transferBalanceButton = FindViewById<Button>(Resource.Id.transfer_balance_button);
             _transferbal = FindViewById<EditText>(Resource.Id.etherValue);
-
+           // _successMessage = FindViewById<EditText>(Resource.Id.SuccessMessage_textview);
         }
 
         /// <summary>

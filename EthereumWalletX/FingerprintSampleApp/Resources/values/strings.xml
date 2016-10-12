@@ -26,17 +26,24 @@
   <string name="Show_Account_Balance_Detail">Show Account and Balance.</string>
 
   <string name="Summary_text">Your Ethereum Accounts and Balance:</string>
-  <string name="Account_1_Heading_text">Accounts 1:</string>
-  <string name="Account_Balance_Heading_text">Account Balance:</string>
-  <string name="Account_2_Heading_text">Accounts 2:</string>
-  <string name="Account_1_text">Show Account and Balance.</string>
-  <string name="Account_1_balance_text">Show Account and Balance.</string>
-  <string name="Account_2_text">Show Account and Balance.</string>
-  <string name="Account_2_balance_text">Show Account and Balance.</string>
-  <string name="Transfer_Balance_Detail">Transfer Balance:</string>
-  <string name="Transfer_Balance">Transfer Balance</string>
   
+  <string name="Account_1_Heading_text">Accounts 1:</string>
+  <string name="Account_1_text">Show Account and Balance</string>
+  <string name="Account_Balance_Heading_text">Account Balance:</string>
+  <string name="Account_1_balance_text">Show Account and Balance</string>
+  
+  <string name="Account_2_Heading_text">Accounts 2:</string>
+  <string name="Account_2_text">Show Account and Balance.</string>
+  <string name="Account_2_balance_text">Show Account and Balance</string>
+  
+  <string name="Account_3_Heading_text">Accounts 3:</string>
+  <string name="Account_3_text">Show Account and Balance.</string>
+  <string name="Account_3_balance_text">Show Account and Balance</string>
 
+  <string name="Transfer_Balance_Detail">Transfer Balance</string>
+  <string name="Transfer_Balance">Transfer Balance</string>
+  <string name="SuccessMessage_Heading_text">Transaction Successful</string>
+  
   <!-- clean these up-->
   <string name="action_settings">Settings</string>
   <string name="use_password">Use password</string>

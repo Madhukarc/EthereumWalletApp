@@ -47,4 +47,17 @@
         android:layout_below="@+id/etherValue"
         android:text="@string/Transfer_Balance"
         android:layout_marginTop="6dp" />
+
+
+  <!--<TextView
+   android:id="@+id/SuccessMessage_textview"
+   android:text="@string/SuccessMessage_Heading_text"
+   android:drawablePadding="@dimen/textview_drawablePadding"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_below="@+id/transfer_balance_button"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+   android:textSize="20dp"
+  android:gravity="center_horizontal" />-->
+  
 </RelativeLayout>
