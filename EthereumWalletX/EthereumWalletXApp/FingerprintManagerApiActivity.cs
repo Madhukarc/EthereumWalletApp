@@ -123,7 +123,7 @@ namespace EthereumWalletXApp
         async void ShowTransferPanel(object sender, EventArgs eventArgs)
         {
 
-           // _successMessage.Visibility = ViewStates.Gone;
+            // _successMessage.Visibility = ViewStates.Gone;
             Spinner sourcespinner = FindViewById<Spinner>(Resource.Id.spnrsourceAccount);
             Spinner targetspinner = FindViewById<Spinner>(Resource.Id.spnrtargetAccount);
 
@@ -177,7 +177,7 @@ namespace EthereumWalletXApp
             tarnsfer.FromAddress = _sourceAccount;
             tarnsfer.ToAddress = _targetAccount;
             tarnsfer.EtherValue = _transferbal.Text;
-            string transactionDetails = "Transaction Details: " + "Source : " +tarnsfer.FromAddress + "target: "+ tarnsfer.ToAddress + "Ether: "+ tarnsfer.EtherValue;
+            string transactionDetails = "Transaction Details: " + "Source : " + tarnsfer.FromAddress + "target: " + tarnsfer.ToAddress + "Ether: " + tarnsfer.EtherValue;
             Toast.MakeText(this, transactionDetails, ToastLength.Long).Show();
 
             var uri = new Uri(string.Format(url, string.Empty));
@@ -194,11 +194,38 @@ namespace EthereumWalletXApp
                     var successMsg = "Transaction Successful";
                     Toast.MakeText(this, successMsg, ToastLength.Long).Show();
                 }
+                Mine();
             }
             catch (Exception ex)
             {
                 ShowError("Error", ex.Message);
             }
+        }
+
+        async void Mine()
+        {
+            string url = "http://52.172.158.181:80/api/Miner/";
+            var uri = new Uri(string.Format(url, string.Empty));
+            try
+            {
+                var response = await client.PostAsync(uri, null);
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var successMsg = "Mining Done";
+                    Toast.MakeText(this, successMsg, ToastLength.Long).Show();
+                }
+                if (response.StatusCode == HttpStatusCode.ExpectationFailed)
+                {
+                    var successMsg = "Try after some time";
+                    Toast.MakeText(this, successMsg, ToastLength.Long).Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowError("Error", ex.Message);
+            }
+
         }
 
 
@@ -311,7 +338,7 @@ namespace EthereumWalletXApp
             _transferAccountBalanceButton = FindViewById<Button>(Resource.Id.transfer_button);
             _transferBalanceButton = FindViewById<Button>(Resource.Id.transfer_balance_button);
             _transferbal = FindViewById<EditText>(Resource.Id.etherValue);
-           // _successMessage = FindViewById<EditText>(Resource.Id.SuccessMessage_textview);
+            // _successMessage = FindViewById<EditText>(Resource.Id.SuccessMessage_textview);
         }
 
         /// <summary>
