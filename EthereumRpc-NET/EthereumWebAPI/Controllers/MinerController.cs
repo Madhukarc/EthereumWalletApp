@@ -31,33 +31,30 @@ namespace EthereumWebAPI.Controllers
         }
 
         // POST: api/Miner
-        public HttpResponseMessage Post()
+        public HttpResponseMessage Post(string action)
         {
 
             try
             {
-                var privateConnection = new ConnectionOptions()
-                {
-                    Port = "8545",
-                    Url = "http://localhost"
-                };
-
-                ethereumService = new EthereumService(privateConnection);
-                ethereumService.StartMining();
-                if (ethereumService.GetMining())
-                {
-                    Thread.Sleep(10000);      // sleeps for 50000= 50 seconds
-                }
-               
-                var result = ethereumService.StopMining();
-                Thread.Sleep(10000);
+                //if(action.ToUpper().Equals("START"))
+                //{
+                //    StartMining();
+                //    if (ethereumService.GetMining())
+                //    {
+                //        var response = Request.CreateResponse(System.Net.HttpStatusCode.OK);
+                //        return response;
+                //    }
+                //}
+                //if (action.ToUpper().Equals("STOP"))
+                //{
+                StopMining();
                 if (!ethereumService.GetMining())
                 {
                     var response = Request.CreateResponse(System.Net.HttpStatusCode.OK);
                     return response;
                 }
+                //}
                 return new HttpResponseMessage(HttpStatusCode.ExpectationFailed);
-
             }
             catch (Exception ex)
             {
@@ -66,6 +63,32 @@ namespace EthereumWebAPI.Controllers
                 response.Content = new StringContent(error);
                 throw new HttpResponseException(response);
             }
+        }
+
+        private bool StartMining()
+        {
+            var privateConnection = new ConnectionOptions()
+            {
+                Port = "8545",
+                Url = "http://localhost"
+            };
+
+            ethereumService = new EthereumService(privateConnection);
+            return ethereumService.StartMining();
+
+        }
+
+        private bool StopMining()
+        {
+            var privateConnection = new ConnectionOptions()
+            {
+                Port = "8545",
+                Url = "http://localhost"
+            };
+
+            ethereumService = new EthereumService(privateConnection);
+            return ethereumService.StopMining();
+
         }
 
         // PUT: api/Miner/5

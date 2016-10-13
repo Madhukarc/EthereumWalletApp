@@ -19,6 +19,7 @@ using Res = Android.Resource;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Threading;
 
 namespace EthereumWalletXApp
 {
@@ -208,7 +209,16 @@ namespace EthereumWalletXApp
             var uri = new Uri(string.Format(url, string.Empty));
             try
             {
-                var response = await client.PostAsync(uri, null);
+                var content = new StringContent("START");
+                var response = await client.PostAsync(uri, content);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var successMsg = "Mining Started";
+                    Toast.MakeText(this, successMsg, ToastLength.Long).Show();
+                }
+                Thread.Sleep(5000);
+                content = new StringContent("STOP");
+                response = await client.PostAsync(uri, content);
 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
