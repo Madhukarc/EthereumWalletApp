@@ -16,27 +16,22 @@
     android:textAppearance="?android:attr/textAppearanceLarge"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_horizontal" />
-  <Button xmlns:tools="http://schemas.android.com/tools"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:id="@+id/scan_again_button"
-          android:layout_below="@+id/validated_textview"
-          android:text="@string/scan_fingerprint_try_again"
-          android:layout_marginTop="6dp" />
+    android:gravity="center_horizontal"
+    android:layout_marginTop="15dp"
+    />
   
   <Button xmlns:tools="http://schemas.android.com/tools"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:id="@+id/show_account_button"
-          android:layout_below="@+id/scan_again_button"
+          android:layout_below="@+id/validated_textview"
           android:text="@string/Show_Account_Balance_Detail"
-          android:layout_marginTop="6dp" />
+          android:layout_marginTop="15dp" />
   <Button xmlns:tools="http://schemas.android.com/tools"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:id="@+id/transfer_button"
          android:layout_below="@+id/show_account_button"
          android:text="@string/Transfer_Balance_Detail"
-         android:layout_marginTop="6dp" />
+         android:layout_marginTop="15dp" />
 </RelativeLayout>

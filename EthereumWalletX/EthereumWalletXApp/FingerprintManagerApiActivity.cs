@@ -25,7 +25,8 @@ namespace EthereumWalletXApp
     /// <summary>
     ///     Fingerprint manager API activity.
     /// </summary>
-    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon")]
+    //[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon", Theme = "@android:style/Theme.Material")]
     public class FingerprintManagerApiActivity : Activity
     {
         // ReSharper disable InconsistentNaming
@@ -42,7 +43,7 @@ namespace EthereumWalletXApp
         TextView _errorTextView1, _errorTextView2;//, _successMessage;
         EditText _transferbal;
         FingerprintManagerCompat _fingerprintManager;
-        Button _startAuthenticationScanButton, _scanAgainButton, _failedScanAgainButton, _showAccountBalanceButton, _transferAccountBalanceButton, _transferBalanceButton;
+        Button _startAuthenticationScanButton, _failedScanAgainButton, _showAccountBalanceButton, _transferAccountBalanceButton, _transferBalanceButton;// _scanAgainButton,
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -57,7 +58,7 @@ namespace EthereumWalletXApp
             _startAuthenticationScanButton.Click += StartFingerprintScan;
             //_startAuthenticationScanButton.Click += ShowTransferPanel;
 
-            _scanAgainButton.Click += ScanAgainButtonOnClick;
+            //_scanAgainButton.Click += ScanAgainButtonOnClick;
             _failedScanAgainButton.Click += RecheckEligibility;
             _showAccountBalanceButton.Click += ShowAccountBalance;
             _transferAccountBalanceButton.Click += ShowTransferPanel;
@@ -302,7 +303,7 @@ namespace EthereumWalletXApp
             _failedScanAgainButton = FindViewById<Button>(Resource.Id.failed_scan_again_button);
 
             _authenticatedPanel = FindViewById(Resource.Id.authenticated_panel);
-            _scanAgainButton = FindViewById<Button>(Resource.Id.scan_again_button);
+           // _scanAgainButton = FindViewById<Button>(Resource.Id.scan_again_button);
 
             _accountBalancePanel = FindViewById(Resource.Id.showAccount_Balance_panel);
             _showAccountBalanceButton = FindViewById<Button>(Resource.Id.show_account_button);

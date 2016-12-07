@@ -14,8 +14,13 @@
    android:textAppearance="?android:attr/textAppearanceLarge"
    android:layout_width="match_parent"
    android:layout_height="wrap_content"
-    android:textSize="28dp"
+    android:textSize="24dp"
    android:gravity="left" />
+  <View
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/Summary_panel_textview"
+    android:layout_height="2dp"
+    android:background="#c0c0c0"/>
 
   <TextView
    android:id="@+id/Account_1_Heading_panel_textview"
@@ -60,6 +65,11 @@
    android:textSize="15dp"
    android:gravity="left" />
 
+  <View
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/Account_1_Balance_panel_textview"
+    android:layout_height="2dp"
+    android:background="#c0c0c0"/>
 
   <TextView
    android:id="@+id/Account_2_Heading_panel_textview"
@@ -103,7 +113,12 @@
       android:textSize="15dp"
         android:gravity="left" />
 
-
+  <View
+      android:layout_width="fill_parent"
+      android:layout_below="@+id/Account_2_Balance_panel_textview"
+      android:layout_height="2dp"
+      android:background="#c0c0c0"/>
+  
   <TextView
    android:id="@+id/Account_3_Heading_panel_textview"
    android:text="@string/Account_3_Heading_text"

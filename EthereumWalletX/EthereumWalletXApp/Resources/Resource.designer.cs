@@ -1879,50 +1879,50 @@ namespace EthereumWalletXApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070097
-			public const int Account_1_Balance_Heading_textview = 2131165335;
-			
-			// aapt resource value: 0x7f070098
-			public const int Account_1_Balance_panel_textview = 2131165336;
-			
-			// aapt resource value: 0x7f070095
-			public const int Account_1_Heading_panel_textview = 2131165333;
-			
 			// aapt resource value: 0x7f070096
-			public const int Account_1_panel_textview = 2131165334;
+			public const int Account_1_Balance_Heading_textview = 2131165334;
 			
-			// aapt resource value: 0x7f07009b
-			public const int Account_2_Balance_Heading_textview = 2131165339;
-			
-			// aapt resource value: 0x7f07009c
-			public const int Account_2_Balance_panel_textview = 2131165340;
-			
-			// aapt resource value: 0x7f070099
-			public const int Account_2_Heading_panel_textview = 2131165337;
-			
-			// aapt resource value: 0x7f07009a
-			public const int Account_2_panel_textview = 2131165338;
-			
-			// aapt resource value: 0x7f07009f
-			public const int Account_3_Balance_Heading_textview = 2131165343;
-			
-			// aapt resource value: 0x7f0700a0
-			public const int Account_3_Balance_panel_textview = 2131165344;
-			
-			// aapt resource value: 0x7f07009d
-			public const int Account_3_Heading_panel_textview = 2131165341;
-			
-			// aapt resource value: 0x7f07009e
-			public const int Account_3_panel_textview = 2131165342;
-			
-			// aapt resource value: 0x7f0700a2
-			public const int SourceAccountHeading = 2131165346;
+			// aapt resource value: 0x7f070097
+			public const int Account_1_Balance_panel_textview = 2131165335;
 			
 			// aapt resource value: 0x7f070094
-			public const int Summary_panel_textview = 2131165332;
+			public const int Account_1_Heading_panel_textview = 2131165332;
 			
-			// aapt resource value: 0x7f0700a4
-			public const int TargetAccountHeading = 2131165348;
+			// aapt resource value: 0x7f070095
+			public const int Account_1_panel_textview = 2131165333;
+			
+			// aapt resource value: 0x7f07009a
+			public const int Account_2_Balance_Heading_textview = 2131165338;
+			
+			// aapt resource value: 0x7f07009b
+			public const int Account_2_Balance_panel_textview = 2131165339;
+			
+			// aapt resource value: 0x7f070098
+			public const int Account_2_Heading_panel_textview = 2131165336;
+			
+			// aapt resource value: 0x7f070099
+			public const int Account_2_panel_textview = 2131165337;
+			
+			// aapt resource value: 0x7f07009e
+			public const int Account_3_Balance_Heading_textview = 2131165342;
+			
+			// aapt resource value: 0x7f07009f
+			public const int Account_3_Balance_panel_textview = 2131165343;
+			
+			// aapt resource value: 0x7f07009c
+			public const int Account_3_Heading_panel_textview = 2131165340;
+			
+			// aapt resource value: 0x7f07009d
+			public const int Account_3_panel_textview = 2131165341;
+			
+			// aapt resource value: 0x7f0700a1
+			public const int SourceAccountHeading = 2131165345;
+			
+			// aapt resource value: 0x7f070093
+			public const int Summary_panel_textview = 2131165331;
+			
+			// aapt resource value: 0x7f0700a3
+			public const int TargetAccountHeading = 2131165347;
 			
 			// aapt resource value: 0x7f070078
 			public const int action0 = 2131165304;
@@ -2035,8 +2035,8 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070040
 			public const int default_activity_button = 2131165248;
 			
-			// aapt resource value: 0x7f0700a9
-			public const int descriptionTextView = 2131165353;
+			// aapt resource value: 0x7f0700a8
+			public const int descriptionTextView = 2131165352;
 			
 			// aapt resource value: 0x7f07006b
 			public const int design_bottom_sheet = 2131165291;
@@ -2071,17 +2071,17 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070024
 			public const int enterAlwaysCollapsed = 2131165220;
 			
+			// aapt resource value: 0x7f070089
+			public const int error_panel = 2131165321;
+			
 			// aapt resource value: 0x7f07008a
-			public const int error_panel = 2131165322;
+			public const int error_text1 = 2131165322;
 			
 			// aapt resource value: 0x7f07008b
-			public const int error_text1 = 2131165323;
+			public const int error_text2 = 2131165323;
 			
-			// aapt resource value: 0x7f07008c
-			public const int error_text2 = 2131165324;
-			
-			// aapt resource value: 0x7f0700a6
-			public const int etherValue = 2131165350;
+			// aapt resource value: 0x7f0700a5
+			public const int etherValue = 2131165349;
 			
 			// aapt resource value: 0x7f070025
 			public const int exitUntilCollapsed = 2131165221;
@@ -2092,8 +2092,8 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070051
 			public const int expanded_menu = 2131165265;
 			
-			// aapt resource value: 0x7f07008d
-			public const int failed_scan_again_button = 2131165325;
+			// aapt resource value: 0x7f07008c
+			public const int failed_scan_again_button = 2131165324;
 			
 			// aapt resource value: 0x7f070035
 			public const int fill = 2131165237;
@@ -2137,11 +2137,11 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070083
 			public const int info = 2131165315;
 			
-			// aapt resource value: 0x7f070090
-			public const int initial_panel = 2131165328;
+			// aapt resource value: 0x7f07008f
+			public const int initial_panel = 2131165327;
 			
-			// aapt resource value: 0x7f070091
-			public const int initial_panel_textview = 2131165329;
+			// aapt resource value: 0x7f070090
+			public const int initial_panel_textview = 2131165328;
 			
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
@@ -2209,14 +2209,11 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070030
 			public const int right = 2131165232;
 			
-			// aapt resource value: 0x7f070087
-			public const int scan_again_button = 2131165319;
+			// aapt resource value: 0x7f07008d
+			public const int scan_in_progress = 2131165325;
 			
 			// aapt resource value: 0x7f07008e
-			public const int scan_in_progress = 2131165326;
-			
-			// aapt resource value: 0x7f07008f
-			public const int scan_in_progress_textview = 2131165327;
+			public const int scan_in_progress_textview = 2131165326;
 			
 			// aapt resource value: 0x7f070017
 			public const int screen = 2131165207;
@@ -2272,8 +2269,8 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070053
 			public const int shortcut = 2131165267;
 			
-			// aapt resource value: 0x7f070093
-			public const int showAccount_Balance_panel = 2131165331;
+			// aapt resource value: 0x7f070092
+			public const int showAccount_Balance_panel = 2131165330;
 			
 			// aapt resource value: 0x7f070011
 			public const int showCustom = 2131165201;
@@ -2284,8 +2281,8 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070013
 			public const int showTitle = 2131165203;
 			
-			// aapt resource value: 0x7f070088
-			public const int show_account_button = 2131165320;
+			// aapt resource value: 0x7f070087
+			public const int show_account_button = 2131165319;
 			
 			// aapt resource value: 0x7f07006d
 			public const int snackbar_action = 2131165293;
@@ -2302,11 +2299,11 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070008
 			public const int split_action_bar = 2131165192;
 			
-			// aapt resource value: 0x7f0700a3
-			public const int spnrsourceAccount = 2131165347;
+			// aapt resource value: 0x7f0700a2
+			public const int spnrsourceAccount = 2131165346;
 			
-			// aapt resource value: 0x7f0700a5
-			public const int spnrtargetAccount = 2131165349;
+			// aapt resource value: 0x7f0700a4
+			public const int spnrtargetAccount = 2131165348;
 			
 			// aapt resource value: 0x7f070018
 			public const int src_atop = 2131165208;
@@ -2320,8 +2317,8 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070031
 			public const int start = 2131165233;
 			
-			// aapt resource value: 0x7f070092
-			public const int start_authentication_scan_buton = 2131165330;
+			// aapt resource value: 0x7f070091
+			public const int start_authentication_scan_buton = 2131165329;
 			
 			// aapt resource value: 0x7f07007a
 			public const int status_bar_latest_event_content = 2131165306;
@@ -2347,8 +2344,8 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f070043
 			public const int title = 2131165251;
 			
-			// aapt resource value: 0x7f0700a8
-			public const int titleTextView = 2131165352;
+			// aapt resource value: 0x7f0700a7
+			public const int titleTextView = 2131165351;
 			
 			// aapt resource value: 0x7f070048
 			public const int title_template = 2131165256;
@@ -2362,14 +2359,14 @@ namespace EthereumWalletXApp
 			// aapt resource value: 0x7f07006a
 			public const int touch_outside = 2131165290;
 			
-			// aapt resource value: 0x7f0700a1
-			public const int transferAccount_Balance_panel = 2131165345;
+			// aapt resource value: 0x7f0700a0
+			public const int transferAccount_Balance_panel = 2131165344;
 			
-			// aapt resource value: 0x7f0700a7
-			public const int transfer_balance_button = 2131165351;
+			// aapt resource value: 0x7f0700a6
+			public const int transfer_balance_button = 2131165350;
 			
-			// aapt resource value: 0x7f070089
-			public const int transfer_button = 2131165321;
+			// aapt resource value: 0x7f070088
+			public const int transfer_button = 2131165320;
 			
 			// aapt resource value: 0x7f070009
 			public const int up = 2131165193;

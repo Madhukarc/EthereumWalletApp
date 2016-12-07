@@ -13,7 +13,6 @@
         layout="@layout/panel_fingerprint_scan_in_progress" />
     <include
         layout="@layout/panel_show_Account_Balance" />
-<include
+    <include
         layout="@layout/panel_Transfer_Account_Balance" />
-
 </RelativeLayout>

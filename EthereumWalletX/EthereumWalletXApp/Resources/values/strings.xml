@@ -5,7 +5,7 @@
   <string name="activity_fingerprintmanagerapiactivity_description">Using the Android APIs along with a Cipher to validated the results.</string>
   <string name="activity_fingeprintauthenticatoractivity_title">Fingerprint Authenticator Example</string>
   <string name="activity_fingeprintauthenticatoractivity_description">Uses the SimpleFingerprintAuthHelper.</string>
-  <string name="authenticated_user_message">Authenticated. Thank You Madhukar!</string>
+  <string name="authenticated_user_message">Welcome Mr. Madhukar!</string>
   <string name="authentication_failed_message">Fingerprint scanned but not recognized.</string>
   <string name="cancel">Cancel</string>
   <string name="fingerprint_description">Confirm fingerprint to continue</string>
@@ -23,9 +23,9 @@
   <string name="scan_fingerprint_try_again">Try again</string>
   <string name="secure_lock_not_setup">Please setup a secure lock screen.</string>
   <string name="scan_cancelled_by_user">User cancelled the scan.</string>
-  <string name="Show_Account_Balance_Detail">Show Account and Balance.</string>
+  <string name="Show_Account_Balance_Detail">Show Account Balance</string>
 
-  <string name="Summary_text">Your Ethereum Accounts and Balance:</string>
+  <string name="Summary_text">Your Ethereum Accounts Details:</string>
   
   <string name="Account_1_Heading_text">Accounts 1:</string>
   <string name="Account_1_text">Show Account and Balance</string>

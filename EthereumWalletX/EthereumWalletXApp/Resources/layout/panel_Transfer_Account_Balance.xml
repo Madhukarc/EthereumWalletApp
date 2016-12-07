@@ -8,38 +8,44 @@
                 android:visibility="gone"
                 android:id="@+id/transferAccount_Balance_panel">
   <TextView
-    android:id="@+id/SourceAccountHeading"     
+    android:id="@+id/SourceAccountHeading"
     android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-         android:text="Choose source account" />
+         android:text="Choose source account"
+    android:textSize="15dp"
+    />
+  
   <Spinner
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
-      android:id="@+id/spnrsourceAccount" 
+      android:id="@+id/spnrsourceAccount"
        android:layout_below="@+id/SourceAccountHeading"
+      android:textSize="11dp"
       />
-  
+
   <TextView
-    android:id="@+id/TargetAccountHeading"       
+    android:id="@+id/TargetAccountHeading"
     android:layout_width="fill_parent"
            android:layout_height="wrap_content"
            android:text="Choose target account"
     android:layout_below="@+id/spnrsourceAccount"
+    android:textSize="15dp"
     />
   <Spinner
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:id="@+id/spnrtargetAccount"
       android:layout_below="@+id/TargetAccountHeading"
+      android:textSize="11dp"
       />
-  
+
   <EditText
     android:id="@+id/etherValue"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
      android:layout_below="@+id/spnrtargetAccount"
     />
-  
+
   <Button xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,5 +65,5 @@
   android:layout_height="wrap_content"
    android:textSize="20dp"
   android:gravity="center_horizontal" />-->
-  
+
 </RelativeLayout>
