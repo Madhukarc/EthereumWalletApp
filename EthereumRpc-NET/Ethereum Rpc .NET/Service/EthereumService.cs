@@ -878,7 +878,29 @@ namespace EthereumRpc
             return rpcResult.Result;
         }
 
+        /// <summary>
+        /// Starts Mining
+        /// </summary>
+        /// <returns></returns>
+        public bool StartMining()
+        {
+            //miner_start
+            var rpcRequest = new RpcRequest(RpcMethod.miner_start);
+            var rpcResult = new RpcConnector().MakeRequest(rpcRequest);
+            return rpcResult.Result;
+        }
 
+        /// <summary>
+        /// Stops Mining
+        /// </summary>
+        /// <returns></returns>
+        public bool StopMining()
+        {
+            //miner_stop
+            var rpcRequest = new RpcRequest(RpcMethod.miner_stop);
+            var rpcResult = new RpcConnector().MakeRequest(rpcRequest);
+            return rpcResult.Result;
+        }
 
         public string ShhPost(string from, string to, string[] topics, string payload, string priority, string ttl)
         {

@@ -136,6 +136,10 @@ namespace EthereumRpc
         [Description("personal_newAccount")]
         personal_newAccount,
         [Description("personal_unlockAccount")]
-        personal_unlockAccount
+        personal_unlockAccount,
+        [Description("miner_start")]
+        miner_start,
+        [Description("miner_stop")]
+        miner_stop
     }
 }
